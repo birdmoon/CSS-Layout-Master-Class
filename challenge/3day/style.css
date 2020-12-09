@@ -1,0 +1,71 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  background-color: #dde1d4;
+  padding: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 650px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: 110px 452px 300px;
+  gap: 10px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 120px 300px 200px;
+  grid-template-rows: 60px auto;
+  padding: 10px 10px;
+  font-size: 13px;
+  line-height: 120%;
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  color: #dde1d4;
+}
+
+.header-text {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.bad {
+  display: flex;
+  align-items: flex-end;
+  background-color: #f14011;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.nav {
+  background-color: #f14011;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+
+.religion {
+  background-color: #f14011;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.big {
+  display: flex;
+  font-size: 170px;
+  font-weight: 700;
+}
+
+.desc {
+  font-size: 27px;
+  color: white;
+  margin-top: 24px;
+  padding: 10px;
+  font-weight: 500;
+}
