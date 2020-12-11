@@ -1,9 +1,28 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 100px);
-  border: 1px solid black;
-  width: 400px;
+  /* height: 100vh; */
+  /* grid-template-columns: repeat(5, minmax(100px, 1fr)); */
+  grid-template-columns: repeat(4, minmax(max-content, 1fr));
+  grid-auto-rows: 100px;
+  margin-bottom: 30px;
+  gap: 5px;
+  color: white;
+}
+/* 
+.grid:first-child {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.grid:nth-child(2) {
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+} */
+
+.item:nth-child(odd) {
+  background-color: yellowgreen;
+}
+
+.item:nth-child(even) {
+  background-color: #6a6dec;
 }
 
 .header {
