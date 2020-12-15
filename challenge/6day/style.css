@@ -50,7 +50,6 @@ body {
   line-height: 120%;
   padding: 10px;
 }
-}
 
 .box4 {
   display: flex;
@@ -71,12 +70,12 @@ body {
 .list-area {
   width: 50vw;
   height: 100vh;
-  display:flex;
+  display: flex;
 }
 
 .speakers {
   width: 50%;
-  padding:15px;
+  padding: 15px;
 }
 
 .artist {
@@ -86,10 +85,15 @@ body {
 
 h5 {
   font-size: 12px;
-  margin-bottom: 20px;;
+  margin-bottom: 20px;
 }
 
 .speakers-ul li {
-  height:5vh;
+  height: 5vh;
   font-weight: 600;
+}
+
+.rotation {
+  display: inline-block;
+  transform: rotate(180deg);
 }
