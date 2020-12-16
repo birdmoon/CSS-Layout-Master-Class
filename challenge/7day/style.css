@@ -38,7 +38,7 @@ body {
 
 .top {
   display: flex;
-  width: 98%;
+  width: 98.35%;
   font-size: 1.7vmin;
   font-weight: 700;
   font-style: italic;
@@ -48,6 +48,7 @@ body {
   color: #fd6b3a;
   position: absolute;
   flex-wrap: wrap;
+  max-height: 40px;
 }
 
 .mc {
@@ -59,8 +60,8 @@ body {
 .container {
   margin-top: 65px;
   display: grid;
-  width: 98%;
-  grid-template: "left cover right" 80vh / 50px 1fr 50px;
+  width: 98.35%;
+  grid-template: "left cover right" 94.5% / 50px 1fr 50px;
   box-sizing: border-box;
   position: relative;
   top: -8px;
@@ -70,9 +71,9 @@ body {
   width: 50px;
   display: grid;
   grid-template:
-    "m1" 53%
-    "letter" 36%
-    "social" 11% / 50px;
+    "m1" 55%
+    "letter" 30%
+    "social" 15% / 50px;
   grid-area: left;
   position: relative;
 }
@@ -81,19 +82,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   grid-area: m1;
+
+  padding: 3px 0px;
+  flex-wrap: wrap;
 }
 .m1 span {
   display: flex;
   font-weight: 600;
   -webkit-transform: rotate(-15deg);
-  font-size: 1.7vmin;
+  font-size: 1.5vmin;
   line-height: 2vmin;
   color: white;
 }
 
 .plus {
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
 .letter {
@@ -104,23 +109,28 @@ body {
   justify-content: center;
   align-items: center;
   padding: 6px;
-  font-size: 1.7vmin;
+  font-size: 1.4vmin;
   font-weight: 600;
   color: #fd6b3a;
   flex-wrap: wrap;
+}
+
+.letter img {
+  width: 20px;
 }
 
 .letter-rotate {
   display: inline-block;
   writing-mode: vertical-lr;
   transform: rotate(180deg) skewY(12deg);
-  padding: 15px 0px;
+  padding: 12px 0px;
 }
 
 .social {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   grid-area: social;
   background-color: white;
@@ -136,6 +146,7 @@ body {
   grid-area: cover;
   background-image: url(./main.jpg);
   background-size: cover;
+  background-position: center;
   margin: 0px 10px;
 }
 /* 
@@ -148,6 +159,7 @@ body {
   grid-area: right;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .order {
@@ -164,6 +176,7 @@ body {
   width: 50px;
   height: 50%;
   margin-bottom: 3px;
+  flex-wrap: wrap;
 }
 
 .reservation {
@@ -180,6 +193,7 @@ body {
   width: 50px;
   height: 50%;
   margin-top: 3px;
+  flex-wrap: wrap;
 }
 
 .bt {
@@ -190,18 +204,19 @@ body {
 }
 
 .bottom {
-  width: 98%;
+  width: 98.35%;
   font-size: 1.7vmin;
   font-weight: 700;
   font-style: italic;
   background-color: white;
-  padding: 12px;
-  margin: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
   box-sizing: border-box;
   color: #fd6b3a;
   position: absolute;
   bottom: 0px;
   flex-wrap: wrap;
+  max-height: 40px;
 }
 
 .star {
