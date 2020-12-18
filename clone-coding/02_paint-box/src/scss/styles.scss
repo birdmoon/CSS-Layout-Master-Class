@@ -18,8 +18,9 @@ body {
   padding-top: 70px;
 }
 
+// *는 direct children을 이야기한다.
 body > *:not(.footer) {
-  padding: 0px 140px;
+  padding: 0px 120px;
 }
 
 header {
@@ -45,8 +46,11 @@ header {
       @extend %miniTitle;
       &:first-child {
         li {
-          margin-right: 60px;
+          margin-right: 40px;
         }
+      }
+      .jl {
+        padding-right: 30px;
       }
     }
   }
@@ -70,7 +74,7 @@ header {
     margin-bottom: 30px;
   }
   h3 {
-    font-size: 48px;
+    font-size: 20px;
     width: 35%;
     text-align: center;
     margin-bottom: 50px;
@@ -114,7 +118,7 @@ header {
         margin-bottom: 30px;
       }
       h3 {
-        font-size: 36px;
+        font-size: 15px;
         text-align: center;
         margin-bottom: 50px;
       }
@@ -159,7 +163,7 @@ header {
         margin-bottom: 70px;
       }
       h4 {
-        font-size: 32px;
+        font-size: 20px;
         margin-bottom: 40px;
       }
     }
