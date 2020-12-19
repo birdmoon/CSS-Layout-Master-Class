@@ -1,5 +1,6 @@
 @import "reset";
 @import "_variables";
+@import "_mixins";
 
 * {
   box-sizing: border-box;
@@ -10,6 +11,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+
 header {
   position: fixed;
   top: 0;
@@ -23,6 +25,7 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   color: $red;
+
   h1 {
     font-size: 75px;
     width: 50%;
@@ -52,7 +55,9 @@ nav {
       color: black;
       opacity: 0.5;
       &:hover {
+        color: red;
         opacity: 1;
+        cursor: pointer;
       }
     }
   }
@@ -87,5 +92,38 @@ main {
       width: 80%;
       box-shadow: 0px 12px 30px 1px rgba(0, 0, 0, 0.7);
     }
+  }
+  @include responsive("mobile-l") {
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@include responsive("tab") {
+  header {
+    display: none;
+  }
+  main {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: orange;
+  }
+}
+
+@include responsive("mobile-l") {
+  header {
+    display: none;
+  }
+  main {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: olive;
   }
 }
