@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Caladea:400&display=swap");
 @import "_reset";
+@import "_variables";
 * {
   box-sizing: border-box;
 }
@@ -19,12 +20,50 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background-color: white;
     border: 1px solid #dac5aa;
+  }
+  .number {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.3s linear, background-colr 0.3 linear;
+    &:hover {
+      background-color: $bg;
+      color: white;
+    }
   }
 }
 
 .center-img {
   grid-column: 2 / 3;
-  grid-row: 2 /7;
+  grid-row: 2 / 7;
+  background-image: url(https://images.unsplash.com/photo-1606290979438-9f389bdb6f63?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80) !important;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(-400px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(400px);
+  }
+}
+
+.scrolling__text {
+  white-space: nowrap;
+  overflow: hidden;
+  span {
+    animation: scrollText 3s linear infinite forwards;
+  }
+}
+
+.center-top {
+  display: flex;
+  flex-wrap: wrap;
 }
