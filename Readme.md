@@ -4,6 +4,18 @@
 
 ![image](https://media.vlpt.us/images/rimu/post/cd5153b9-9e40-4467-8f75-c17d2e188ee4/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202020-04-20%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%208.36.20.png)
 
+## Challenge:
+
+- [2day](https://repl.it/@birdmoon/challenge-2day) : 매거진 클론 #1
+- [3day](https://repl.it/@birdmoon/3day) : 매거진 클론 #1
+- [4day](https://repl.it/@birdmoon/4day) : Ostrich
+- [5day](https://repl.it/@birdmoon/5day) : [A Year Conscious Practice 클론](https://www.ayearofconsciouspractice.com/)
+- [6day](https://repl.it/@birdmoon/6day) : 그리드 레이아웃 클론 Changes, Text Rotation
+- [7day](https://repl.it/@birdmoon/7day) : [커리카페 클론](https://curry.cafe/)
+- [9day](https://repl.it/@birdmoon/9day) : [엘럼아티스트 클론](https://elamartists.ac.nz/)
+- [10day](https://repl.it/@birdmoon/10day) : 가운데 fix, 바람개비 [스페셜오퍼스튜디오 클론](https://special-offer.studio/)
+- [12day](https://repl.it/@birdmoon/12day) : 마지막 과제 (인테리어 사이트) [A1 Office 클론](https://a1office.com.au/)
+
 ## Flexbox:
 
 - [x] flex-direction
